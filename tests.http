@@ -1,0 +1,28 @@
+GET http://localhost:3000/products
+
+###
+
+GET http://localhost:3000/product/1?user=admin
+
+###
+
+POST http://localhost:3000/product/create?user=admin
+Content-Type: application/json
+
+{
+    "name": "Macbook",
+    "price": "a lot"
+}
+
+###
+
+PUT http://localhost:3000/product/update/4?user=admin
+Content-Type: application/json
+
+{
+    "price": 1000
+}
+
+###
+
+DELETE http://localhost:3000/product/delete/4?user=admin
